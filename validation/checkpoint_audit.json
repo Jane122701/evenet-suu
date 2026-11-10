@@ -1,0 +1,11 @@
+{
+  "checkpoint_sha256": "3c8b571328112988fd7186953a2f3155f0e22301a9c8d7e24f520881251a5ef2",
+  "weights": "state_dict",
+  "loaded_backbone_tensors": 504,
+  "expected_backbone_tensors": 504,
+  "loaded_backbone_elements": 18679555,
+  "ignored_pretraining_tensors": 99,
+  "core_commit": "2b4702beef0b823338e26713abc1688b03f6043b",
+  "full_commit": "06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad",
+  "hf_revision": "afba5b47478f0c25c6a5a5755ac30738925d73ad"
+}

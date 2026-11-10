@@ -1,0 +1,53 @@
+python tests/integration.py --upstream ../evenet_upstream --pretrained ../checkpoints/checkpoints.20M.a4.last.ckpt
+[
+  {
+    "file": "train_0000_0000.npz",
+    "events": 32,
+    "truncated": 0
+  },
+  {
+    "file": "val_0000_0000.npz",
+    "events": 6,
+    "truncated": 0
+  },
+  {
+    "file": "test_0000_0000.npz",
+    "events": 2,
+    "truncated": 0
+  },
+  {
+    "file": "train_0001_0000.npz",
+    "events": 26,
+    "truncated": 0
+  },
+  {
+    "file": "val_0001_0000.npz",
+    "events": 6,
+    "truncated": 0
+  },
+  {
+    "file": "test_0001_0000.npz",
+    "events": 8,
+    "truncated": 0
+  }
+]
+{"epoch": 1, "frozen_backbone": true, "train": {"classification": 0.6873321862056337, "mass": 0.2722307053896097, "total": 0.9595628915952434}, "val": {"classification": 0.8183252811431885, "mass": 0.006253377224008243, "total": 0.8245786583671967}}
+{"epoch": 2, "frozen_backbone": false, "train": {"classification": 0.6958631647044214, "mass": 0.03836596112411756, "total": 0.734229125828539}, "val": {"classification": 0.9163262844085693, "mass": 0.20610670248667398, "total": 1.1224329868952434}}
+[
+  {
+    "file": "train_0000_0000.npz",
+    "events": 32,
+    "truncated": 0
+  },
+  {
+    "file": "val_0000_0000.npz",
+    "events": 6,
+    "truncated": 0
+  },
+  {
+    "file": "test_0000_0000.npz",
+    "events": 2,
+    "truncated": 0
+  }
+]
+PASS: strict pretrained loading, signal-only/empty-signal mass loss, ROOT conversion, frozen and unfrozen training, validation, checkpoint reload, all-event inference.

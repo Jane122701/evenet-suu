@@ -1,0 +1,22 @@
+[
+  {
+    "file": "/replace/with/signal.root",
+    "tree": "yourModule/tree_event_nom",
+    "event_namespace": "Suu6000_Chi2000_nominal_production",
+    "label": 1,
+    "m_chi_gev": 2000,
+    "m_suu_gev": 6000,
+    "btag_wp": 0.2783,
+    "selected_zero_leptons_and_taus": false,
+    "branches": {"met": "MET_pt", "met_phi": "MET_phi"}
+  },
+  {
+    "file": "/replace/with/qcd.root",
+    "tree": "yourModule/tree_event_nom",
+    "event_namespace": "QCD_HT1500to2000_nominal_production",
+    "label": 0,
+    "btag_wp": 0.2783,
+    "selected_zero_leptons_and_taus": false,
+    "branches": {"met": "MET_pt", "met_phi": "MET_phi"}
+  }
+]

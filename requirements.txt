@@ -1,0 +1,6 @@
+# Tested Python 3.12 environment. Install the CPU or CUDA torch build first.
+torch==2.6.0
+numpy==2.3.5
+PyYAML==6.0.3
+uproot==5.7.7
+awkward==2.14.0

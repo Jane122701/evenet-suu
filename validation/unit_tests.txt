@@ -1,0 +1,21 @@
+python -m compileall -q model.py train.py prepare_root.py bootstrap.py tests
+bash -n setup.sh
+python -m unittest discover -s tests -p 'test_*.py' -v
+test_continuous_btag_rejected (test_core.DataTests.test_continuous_btag_rejected) ... ok
+test_conversion_physics_and_padding (test_core.DataTests.test_conversion_physics_and_padding) ... ok
+test_cross_split_overlap_rejected (test_core.DataTests.test_cross_split_overlap_rejected) ... ok
+test_duplicate_events_rejected (test_core.DataTests.test_duplicate_events_rejected) ... ok
+test_inference_without_any_target_arrays (test_core.DataTests.test_inference_without_any_target_arrays) ... ok
+test_split_stable (test_core.DataTests.test_split_stable) ... ok
+test_wrong_feature_order_rejected (test_core.DataTests.test_wrong_feature_order_rejected) ... ok
+test_zero_pt_jet_rejected (test_core.DataTests.test_zero_pt_jet_rejected) ... ok
+test_background_only_batch (test_core.LossTests.test_background_only_batch) ... ok
+test_background_targets_and_gradients_excluded (test_core.LossTests.test_background_targets_and_gradients_excluded) ... ok
+test_invalid_signal_mass_rejected (test_core.LossTests.test_invalid_signal_mass_rejected) ... ok
+test_negative_training_weights_rejected (test_core.LossTests.test_negative_training_weights_rejected) ... ok
+test_weighted_epoch_sums (test_core.LossTests.test_weighted_epoch_sums) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.010s
+
+OK
